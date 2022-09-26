@@ -1,0 +1,66 @@
+
+<head>
+  <link rel="import" href="../index.html">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+  <div class="hDiv">
+    <h1>Tu Peter Parker Favorito Seleccionalo Abajo.</h1>
+    <img src="../resources/Spider3.jpg" alt="" srcset="" class="hInicio">
+    
+  </div>
+  <br>
+
+
+  <div class="container">
+    <div class="card" >
+      <img src="../resources/peter1.webp" alt="" srcset="" id="tobey">
+      <div class="content">
+        <h2>1</h2>
+        <h3>Tobey Maguire</h3>
+        <p>Tu Amigable Vecino Spiderman</p>
+        <a href="#" onclick="animation(),spider1()" class="tobey">read more</a>
+      </div>
+    </div>
+    <div class="card" >
+      <img src="../resources/peter2.jpg" alt="" srcset="" id="andrew">
+      <div class="content">
+        <h2>2</h2>
+        <h3>Andrew Garfield</h3>
+        <p>El Sorprendente Spiderman</p>
+        <a href="#" onclick="animation(),spider2()" class="andre">read more</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../resources/peter3.png" alt="" srcset="" id="tom">
+      <div class="content">
+        <h2>3</h2>
+        <h3>Tom Holland</h3>
+        <p>Spiderman UCM</p>
+        <a href="#" onclick="animation(),spider3()" class="tom">read more</a>
+      </div>
+    </div>
+  </div>
+    
+  <script type="module" src="../js/page.js"></script>
+
+  <script type="text/javascript" src="../js/vanilla-tilt.min.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".your-element"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare":1,
+    });
+    
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".card"));
+  </script>
+
+
+
+
+
+
+
+</body>
